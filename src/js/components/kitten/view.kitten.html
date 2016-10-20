@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Add Kitten</h1>
+  <div class="row">
+    <form class="col s6" ng-submit="kittenCtrl.submitKitten()" name="kittenForm">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="kittenName" type="text" class="validate" ng-model="kittenCtrl.kittenName">
+          <label for="kitten_name">Kitten Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="kittenUrl" type="url" class="validate" ng-model="kittenCtrl.kittenUrl">
+          <label for="kittenUl">Kitten Image URL</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="kittenBio" type="text" class="validate" ng-model="kittenCtrl.kittenBio">
+          <label for="kittenBio">Kitten Bio</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+      </button>
+    </form>
+  </div>
+</div>

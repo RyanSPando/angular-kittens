@@ -1,1 +1,5 @@
 /* add custom styles */
+.avatar {
+  height: 150px;
+  width: 150px;
+}
