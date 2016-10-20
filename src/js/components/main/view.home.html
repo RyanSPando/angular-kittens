@@ -15,16 +15,8 @@
             </span>
           </div>
           <div class="col s2">
-            <div class="row">
-              <h5>
-                <span class="" ng-class="{'green-text': kitten.kittenRating > 0, 'red-text': kitten.kittenRating < 0}">
-                {{kitten.kittenRating}}
-                </span>
-                |
-                <a href="#" class="waves-effect waves-light btn-floating" ng-click="mainCtrl.upVote($index)"><i class="fa fa-chevron-up"  aria-hidden="true"></i></a>
-                <a href="#" class="waves-effect waves-light btn-floating red" ng-click="mainCtrl.downVote($index)"><i class="fa fa-chevron-down"  aria-hidden="true"></i></a>
-              </h5>
-            </div>
+            <kitten-likes>
+            </kitten-likes>
             <div class="">
               <a href="#" ng-click="mainCtrl.toggleComments($index)">View Comments</a>
             </div>
@@ -60,16 +52,8 @@
             </div>
           </div>
           <div class="col s2">
-            <div class="row">
-              <h5>
-                <span class="" ng-class="{'green-text': kitten.kittenRating > 0, 'red-text': kitten.kittenRating < 0}">
-                {{kitten.kittenRating}}
-                </span>
-                |
-                <a href="#" class="waves-effect waves-light btn-floating" ng-click="mainCtrl.upVote($index)"><i class="fa fa-chevron-up"  aria-hidden="true"></i></a>
-                <a href="#" class="waves-effect waves-light btn-floating red" ng-click="mainCtrl.downVote($index)"><i class="fa fa-chevron-down"  aria-hidden="true"></i></a>
-              </h5>
-            </div>
+            <kitten-likes>
+            </kitten-likes>
             <div class="">
               <a ng-showhref="#" ng-click="mainCtrl.toggleComments($index)">Close Comments</a>
             </div>

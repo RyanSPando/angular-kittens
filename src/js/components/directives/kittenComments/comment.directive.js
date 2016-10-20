@@ -11,7 +11,7 @@
       scope: '=',
       link: function(scope, elem, attrs) {
       },
-      templateUrl:'/js/components/directives/view.comment.html'
+      templateUrl:'/js/components/directives/kittenComments/view.comment.html'
     };
   }
 })();

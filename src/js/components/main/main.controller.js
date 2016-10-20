@@ -39,14 +39,6 @@
       vm.kittens[index].showAddComment = kittenService.toggleAddComment(index);
     };
 
-    vm.upVote = (index) => {
-      vm.kittens[index].kittenRating = kittenService.upVote(index);
-    };
-
-    vm.downVote = (index) => {
-      vm.kittens[index].kittenRating = kittenService.downVote(index);
-    };
-
     vm.addComment = (index) => {
       const newComment = {name: vm.commentName, comment: vm.comment};
       kittenService.addComment(index, newComment);
